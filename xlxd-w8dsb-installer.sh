@@ -47,8 +47,8 @@ mkdir -p $XLXINSTDIR
 mkdir -p $WEBDIR
 #Modified by W8DSB
 apt-get update
-apt-get install apache2
-apt install php libapache2-mod-php
+apt-get install -y apache2
+apt install -y php libapache2-mod-php
 systemctl restart apache2
 #End Mod
 echo "------------------------------------------------------------------------------"
@@ -60,6 +60,7 @@ then
 else
 #Modified by W8DSB
 apt-get install -y make
+apt-get install -y g++
 #End Mod
    echo "Downloading and compiling xlxd... "
    echo "------------------------------------------------------------------------------"
